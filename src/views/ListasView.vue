@@ -15,6 +15,11 @@
             <li v-for="(ejemplo, indice) in ejemplos" :key="indice">{{ ejemplo }}</li>
         </ul>
         <p>En lugar de construir cada elemento por separado, defines los datos una sola vez y utilizas v-for para recorrerlos.</p>
+        <h3>Ejemplo práctico de funcionamiento</h3>
+        <h4>Integrantes del equipo:</h4>
+        <ul>
+            <li v-for="(integrante, indice) in equipo" :key="indice">{{ integrante }}</li>
+        </ul>
     </main>
 </template>
 
@@ -25,5 +30,11 @@ const ejemplos = [
     "Crear un menú de navegación a partir de un arreglo.",
     "Mostrar las tareas pendientes de un usuario.",
     "Presentar los nombres de los integrantes de un equipo."
+]
+
+const equipo = [
+    "Belem De Jesús Hérnandez Molina",
+    "Erika Jhoana Hidalgo De la torre",
+    "Karen Yamileth Domínguez Gómez"
 ]
 </script>
