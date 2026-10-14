@@ -3,7 +3,7 @@
 
         <h1>Visibilidad en Vue</h1>
         <h2>v-show</h2>
-        <img src="../assets/directiva-v-for.png">
+        <img>
         <h3>¿Qué es v-show?</h3>
         <p>v-show es una directiva de Vue que permite mostrar u ocultar un elemento HTML dependiendo de una condición. Para hacerlo, modifica la propiedad CSS display del elemento, sin eliminarlo del DOM.</p>
         <h3>Ejemplo</h3>
@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
+
 import { ref } from 'vue' //Ayuda a crear una variable reactiva
 
 const mostrar=ref(true)
