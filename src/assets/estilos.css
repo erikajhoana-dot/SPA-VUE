@@ -126,9 +126,7 @@ h2 {
     background: #101014;
     border: 1px solid #30234d;
     border-radius: 18px;
-    transition: transform 0.25s ease,
-                border-color 0.25s ease,
-                background-color 0.25s ease;
+    transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
 }
 
 .vista-visibilidad .tarjeta:hover {
@@ -222,5 +220,42 @@ h2 {
     .vista-visibilidad .tarjeta:hover,
     .vista-visibilidad button:hover {
         transform: none;
+    }
+}
+
+.vista-visibilidad .tarjeta label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ddd6fe;
+    font-weight: 600;
+}
+
+.vista-visibilidad .tarjeta input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #1a1822;
+    border: 1px solid #6346bb;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vista-visibilidad .tarjeta input:focus {
+    outline: none;
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgb(137 82 251 / 20%);
+}
+
+.vista-visibilidad .tarjeta input::placeholder {
+    color: #85818f;
+}
+
+@media (max-width: 650px) {
+    .vista-visibilidad .tarjeta input {
+        font-size: 16px;
     }
 }
