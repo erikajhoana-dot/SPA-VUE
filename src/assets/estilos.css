@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    background-color: #010102;
+    color: white;
+}
+
+header {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+img {
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 50px;
+}
+
+header p {
+    margin-bottom: 50px;
+}
+
+.texto-vue {
+    color: #6346bb;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    padding: 12px 20px;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #8952fb;
+    border-radius: 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #7c3aed;
+    color: #ffffff;
+    border-color: #a78bfa;
+    transform: translateY(-3px);
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #a6a6a6;
+    margin-bottom: 50px;
+}
+
+.vista-visibilidad {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+.vista-visibilidad p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #a6a6a6;
+    margin-bottom: 20px;
+}
+
+.vista-visibilidad ul {
+    list-style: none;
+    padding-left: 25px;
+    line-height: 2;
+    color: #a6a6a6;
+}
+
+.vista-visibilidad .tarjeta {
+    margin-top: 45px;
+    padding: 28px;
+    background-color: #101014;
+    border: 1px solid #30234d;
+    border-radius: 18px;
+}
+
+.vista-visibilidad button {
+    padding: 12px 22px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #8952fb;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vista-visibilidad button:hover {
+    background-color: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.vista-visibilidad .mensaje-demo {
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 18px;
+    color: #ddd6fe;
+    background-color: #1e1b2e;
+    border: 1px solid #6346bb;
+    border-radius: 12px;
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
