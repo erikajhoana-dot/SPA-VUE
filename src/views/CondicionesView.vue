@@ -5,7 +5,7 @@
         <h1>Condiciones en Vue</h1>
         <h2>v-if, v-else-if y v-else</h2>
         
-        <img>
+        <img src="../assets/v-if.png" alt="Ilustración explicativa de las directiva v-if, v-else-if y v-else de Vue">
         </header>
 
         <div class="tablero">

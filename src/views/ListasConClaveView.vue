@@ -1,30 +1,45 @@
 <template>
-    <main>
+    <main class="vista-visibilidad">
 
+        <header class="encabezado">
         <h1>Listas con clave en Vue</h1>
         <h2>v-for y v-bind:key</h2>
 
-        <h3>¿Qué es v-bind:key?</h3>
-        <p>v-bind:key es una forma de asignar una clave única a cada elemento generado mediante una lista con v-for. Esta clave permite que Vue identifique cada elemento y pueda actualizar la lista de manera eficiente cuando los datos cambian.</p>
+        <img class="imagen" src="../assets/v-bind.png" alt="Ilustración explicativa de la directiva v-bind:key de Vue">
+        </header>
 
-        <h3>Ejemplo</h3>
-        <p>Por ejemplo, imagina que tienes una lista de estudiantes. Cada estudiante tiene un identificador único, un nombre y una carrera. Al utilizar v-for para recorrer la lista, puedes asignar el identificador de cada estudiante como clave mediante :key. De esta manera, Vue puede reconocer cada elemento de la lista.</p>
+        <div class="tablero">
 
-        <h3>¿Para qué sirve?</h3>
-        <p>La directiva :key es útil cuando necesitas mostrar listas de elementos que pueden cambiar, agregarse o eliminarse. Ayuda a Vue a identificar cada elemento correctamente durante las actualizaciones.</p>
+            <section class="tarjeta">
+                <h3>¿Qué es v-bind:key?</h3>
+                <p>v-bind:key es una forma de asignar una clave única a cada elemento generado mediante una lista con v-for. Esta clave permite que Vue identifique cada elemento y pueda actualizar la lista de manera eficiente cuando los datos cambian.</p>
+            </section>
 
-        <p>Algunos ejemplos de uso son:</p>
-        <ul>
-            <li v-for="(ejemplo, indice) in ejemplos" :key="indice">{{ ejemplo }}</li>
-        </ul>
+            <section class="tarjeta">
+                <h3>Ejemplo</h3>
+                <p>Por ejemplo, imagina que tienes una lista de estudiantes. Cada estudiante tiene un identificador único, un nombre y una carrera. Al utilizar v-for para recorrer la lista, puedes asignar el identificador de cada estudiante como clave mediante :key. De esta manera, Vue puede reconocer cada elemento de la lista.</p>
+            </section>
 
-        <h3>Ejemplo práctico de funcionamiento</h3>
-        <ul>
-            <li v-for="estudiante in estudiantes" :key="estudiante.id">
-                {{ estudiante.nombre }} - {{ estudiante.carrera }}
-            </li>
-        </ul>
+            <section class="tarjeta">
+                <h3>¿Para qué sirve?</h3>
+                <p>La directiva :key es útil cuando necesitas mostrar listas de elementos que pueden cambiar, agregarse o eliminarse. Ayuda a Vue a identificar cada elemento correctamente durante las actualizaciones.</p>
+                <p>Algunos ejemplos de uso son:</p>
+                <ul>
+                    <li v-for="(ejemplo, indice) in ejemplos" :key="indice">{{ ejemplo }}</li>
+                </ul>
+            </section>
 
+            <section class="tarjeta">
+                <h3>Ejemplo práctico de funcionamiento</h3>
+                <ul>
+                    <li v-for="estudiante in estudiantes" :key="estudiante.id">
+                        {{ estudiante.nombre }} - {{ estudiante.carrera }}
+                    </li>
+                </ul>
+                <p>En este ejemplo práctico se utiliza la directiva v-for para recorrer la lista de estudiantes y mostrar sus nombres y carreras en una lista con viñetas. Por cada estudiante que se encuentra en el arreglo estudiantes, Vue genera automáticamente un elemento &lt;li&gt; con su información. De esta manera, se pueden mostrar varios estudiantes sin necesidad de escribir cada elemento manualmente.</p>
+            </section>
+
+        </div>
     </main>
 </template>
 
