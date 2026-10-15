@@ -2,7 +2,7 @@
 <template>
     <main class="vista-visibilidad">
 
-        <header class="encabezado-visibilidad">
+        <header class="encabezado">
             <h1>Visibilidad en Vue</h1>
             <h2>v-show</h2>
 
